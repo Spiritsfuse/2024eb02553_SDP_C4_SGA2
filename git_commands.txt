@@ -1,0 +1,61 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION - SDP C4 SGA2 ASSIGNMENT
+Student Roll Number: 2024eb02553
+Repository: https://github.com/Spiritsfuse/2024eb02553_SDP_C4_SGA2
+================================================================================
+
+1. git init -b main
+   Initializes a new Git repository in the current project directory with the default branch set to 'main'.
+
+2. git status
+   Displays the working tree status, showing staged, unstaged, and untracked files.
+
+3. git add <file>
+   Adds file changes from the working tree to the Git staging area (index) in preparation for committing.
+   Example: git add index.html about.html
+
+4. git commit -m "<message>"
+   Records staged changes into the repository history with an informative commit message describing the changes.
+   Example: git commit -m "Initial commit: Add index.html and about.html"
+
+5. git diff
+   Shows file modifications between the current working tree and the staging area or repository commits.
+
+6. git branch <branch-name>
+   Creates a new branch pointer at the current commit without automatically switching to it.
+   Example: git branch feature
+
+7. git checkout <branch-name> / git switch <branch-name>
+   Switches the working directory and HEAD pointer to the specified branch.
+   Example: git checkout feature
+
+8. git merge --no-ff <branch-name> -m "<message>"
+   Merges changes from the specified branch into the active branch while creating an explicit merge commit to preserve branch topology.
+   Example: git merge --no-ff feature -m "Merge branch 'feature' into main"
+
+9. git log --oneline --graph --all --decorate
+   Renders a visual ASCII graph of the entire repository commit history across all branches with abbreviated hashes and branch pointers.
+
+10. git status --ignored
+    Displays the current status of the working tree while explicitly listing ignored files matched by patterns in .gitignore.
+
+11. git reset HEAD~1
+    Undoes the most recent commit by moving HEAD back by one commit while keeping modifications in the working directory as unstaged changes.
+
+12. git reset --soft HEAD~1
+    Undoes the most recent commit while preserving all changes staged in the index ready for an updated commit.
+
+13. git remote add origin <url>
+    Associates the local repository with a remote repository URL under the alias name 'origin'.
+    Example: git remote add origin https://github.com/Spiritsfuse/2024eb02553_SDP_C4_SGA2.git
+
+14. git remote -v
+    Displays the names and URLs of all configured remote connections for fetch and push operations.
+
+15. git push -u origin <branch-name>
+    Uploads local commits to the specified remote repository branch and sets up upstream tracking.
+    Example: git push -u origin main
+
+16. git push origin <branch-name>
+    Pushes an additional local branch (such as 'feature') to the remote repository so remote history includes all branches.
+    Example: git push origin feature
