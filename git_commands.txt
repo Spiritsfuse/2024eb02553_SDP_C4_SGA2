@@ -1,5 +1,5 @@
 ================================================================================
-GIT COMMANDS DOCUMENTATION - SDP C4 SGA2 ASSIGNMENT
+GIT COMMANDS DOCUMENTATION - ASSIGNMENT SGA2
 Student Roll Number: 2024eb02553
 Repository: https://github.com/Spiritsfuse/2024eb02553_SDP_C4_SGA2
 ================================================================================
